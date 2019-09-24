@@ -42,11 +42,11 @@ section {
   z-index: 2; }
 
 .links {
-  width: 50%;
+  width: 40%;
   align-self: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center; }
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center; }
   .links a {
     text-decoration: none;
     color: #7d531b;
@@ -55,6 +55,9 @@ section {
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s; }
     .links a:hover {
-      border-bottom: 2px solid #7d531b; }
+      color: #b02c2c;
+      border-bottom: 2px solid #b02c2c; }
+    .links a .links--github, .links a .links--linkedin {
+      bbackground: #b02c2c; }
 
 /*# sourceMappingURL=main.css.map */

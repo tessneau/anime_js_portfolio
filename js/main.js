@@ -1,7 +1,11 @@
+////// VARIABLES ////////////
+
 const panels = document.querySelectorAll('.panels div')
 const main = document.querySelector('.main-container')
 const content = document.querySelector('.content-container')
 const links = document.querySelector('.links')
+
+////// EVENTS /////////////////
 
 function navHandler(e) {
   if (e.target.className === "links--about") {
@@ -17,6 +21,9 @@ function navHandler(e) {
 }
 
 links.addEventListener('click', navHandler)
+
+/////// ANIMATIONS ////////////////////
+
 
 let tl = anime.timeline({
   easing: 'easeOutExpo',
