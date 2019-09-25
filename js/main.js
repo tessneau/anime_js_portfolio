@@ -37,23 +37,15 @@ tl.add({
   width: '100%',
   delay: anime.stagger(100)
 })
-t1.add({
-  targets: footer,
-  bottom: 0,
-  opacity: 1,
-  duration: 2000
-  })
-tl.add({
+.add({
   targets: main,
   top: 0,
   opacity: 1,
   duration: 4000
 })
-
-// anime({
-//   targets: footer,
-//   bottom: 0,
-//   opacity: 0.5,
-//   duration: 10000,
-//   easing: 'easeOutExpo'
-//   })
+.add({
+  targets: footer,
+  bottom: 0,
+  opacity: 1,
+  duration: 4000
+  }, '-=4000')
