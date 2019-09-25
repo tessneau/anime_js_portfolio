@@ -29,9 +29,15 @@ section {
   padding: 1em 2em;
   background: 'rgba(237, 202, 165, 0.82)';
   border: 4px solid #7d531b;
-  opacity: 0;
+  opacity: 1;
   flex-grow: 1; }
   .content-container .about {
+    display: none;
+    opacity: 0;
+    font-size: 18px; }
+  .content-container .projects {
+    display: none;
+    opacity: 0;
     font-size: 18px; }
 
 .footer {

@@ -3,6 +3,8 @@
 const panels = document.querySelectorAll('.panels div')
 const main = document.querySelector('.main-container')
 const content = document.querySelector('.content-container')
+const about = document.querySelector('.about')
+const projects = document.querySelector('.projects')
 const footer = document.querySelector('.footer')
 const links = document.querySelector('.links')
 
@@ -10,13 +12,26 @@ const links = document.querySelector('.links')
 
 function navHandler(e) {
   if (e.target.className === "links--about") {
-    console.log('yo')
     anime({
-      targets: content,
-      backgroundColor: 'red',
+      targets: about,
       opacity: 1,
       easing: 'easeOutExpo',
-      duration: 3000
+      duration: 3000,
+      begin: function() {
+        about.style.display = "block";
+        projects.style.display = "none";
+      }
+      });
+  } else if (e.target.className === "links--projects") {
+    anime({
+      targets: projects,
+      opacity: 1,
+      easing: 'easeOutExpo',
+      duration: 3000,
+      begin: function() {
+        projects.style.display = "block";
+        about.style.display = "none";
+      }
       })
   }
 }
