@@ -2,6 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Montserrat';
+  color: #7d531b;
   overflow: hidden; }
 
 section {
@@ -21,7 +22,6 @@ section {
   flex-flow: column;
   top: 20%;
   opacity: 0;
-  color: #7d531b;
   z-index: 1; }
 
 .content-container {
@@ -34,6 +34,33 @@ section {
   .content-container .about {
     font-size: 2em; }
 
+.footer {
+  position: fixed;
+  opacity: 0;
+  z-index: 2;
+  background: #d6a573;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 5fr 2fr; }
+  .footer a {
+    text-decoration: none;
+    color: #b02c2c; }
+  .footer__contact {
+    place-self: center start;
+    padding: 30px; }
+  .footer__social {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: #7d531b; }
+    .footer__social span {
+      font-size: 17px; }
+
 #name {
   position: relative;
   left: 12%;
@@ -43,9 +70,9 @@ section {
 
 .links {
   width: 40%;
-  align-self: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  align-self: center;
   place-items: center; }
   .links a {
     text-decoration: none;
@@ -53,11 +80,9 @@ section {
     font-size: 20px;
     padding: 10px 0px;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.5s; }
+    transition: border-bottom 0.5s ease; }
     .links a:hover {
       color: #b02c2c;
       border-bottom: 2px solid #b02c2c; }
-    .links a .links--github, .links a .links--linkedin {
-      bbackground: #b02c2c; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@
 const panels = document.querySelectorAll('.panels div')
 const main = document.querySelector('.main-container')
 const content = document.querySelector('.content-container')
+const footer = document.querySelector('.footer')
 const links = document.querySelector('.links')
 
 ////// EVENTS /////////////////
@@ -36,9 +37,23 @@ tl.add({
   width: '100%',
   delay: anime.stagger(100)
 })
+t1.add({
+  targets: footer,
+  bottom: 0,
+  opacity: 1,
+  duration: 2000
+  })
 tl.add({
   targets: main,
-  top: '0',
+  top: 0,
   opacity: 1,
   duration: 4000
 })
+
+// anime({
+//   targets: footer,
+//   bottom: 0,
+//   opacity: 0.5,
+//   duration: 10000,
+//   easing: 'easeOutExpo'
+//   })
