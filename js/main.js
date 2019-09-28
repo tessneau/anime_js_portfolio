@@ -36,7 +36,14 @@ function navHandler(e) {
   }
 }
 
+function projectHandler(e) {
+  if (e.target.className === "project_demo") {
+    e.target.nextElementSibling.style.display = "block";
+  }
+}
+
 links.addEventListener('click', navHandler)
+projects.addEventListener('mouseover', projectHandler)
 
 /////// ANIMATIONS ////////////////////
 
