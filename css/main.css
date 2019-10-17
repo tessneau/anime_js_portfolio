@@ -47,19 +47,20 @@ section {
       display: flex;
       justify-content: space-around; }
     .content-container .projects__list {
+      margin: 5% 0%;
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: space-between; }
     .content-container .projects__list__item {
-      margin: 2em;
+      padding: 5%;
       background: #faf5f0;
       font-size: 14px;
-      width: 100%;
+      width: 80%;
       display: grid;
       grid-template-columns: 1fr 2fr;
       place-items: center;
-      opacity: 0.5;
+      opacity: 1;
       transition: opacity 0.3s linear; }
       .content-container .projects__list__item ul {
         display: flex;
@@ -71,16 +72,40 @@ section {
         color: #b02c2c; }
       .content-container .projects__list__item span {
         font-size: 16px; }
-    .content-container .projects__list__item:hover {
-      opacity: 1; }
+    .content-container .projects__list__item:nth-child(odd) {
+      background: #f0ead6; }
   .content-container .project_info {
-    height: 80%;
+    height: 100%;
+    width: 70%;
     font-size: 20px;
-    text-align: center; }
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between; }
+    .content-container .project_info h3 {
+      margin: 0; }
+    .content-container .project_info .project_description {
+      text-align: left; }
+    .content-container .project_info .project_tech {
+      width: 100%;
+      margin-top: 20%;
+      align-self: start; }
+    .content-container .project_info .project_tech__list {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0; }
+      .content-container .project_info .project_tech__list__item {
+        padding: 5px 10px;
+        text-align: center;
+        background: rgba(237, 202, 165, 0.82);
+        border-radius: 5px; }
   .content-container .project_demo {
     width: 300px;
     height: 370px;
-    object-fit: scale-down; }
+    object-fit: scale-down;
+    border-radius: 5px; }
     .content-container .project_demo--shakespeare, .content-container .project_demo--map {
       width: 400px;
       height: 400px; }
