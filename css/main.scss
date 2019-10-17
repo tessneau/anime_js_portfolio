@@ -26,7 +26,6 @@ html, body {
   position: absolute;
   height: 100%;
   width: 100%;
-  // padding-bottom: 1000px;
 
   display: flex;
   flex-flow: column;
@@ -38,9 +37,6 @@ html, body {
 .content-container {
   height: 100%;
   margin: 0em 0em 4em 0em;
-  // padding: 1em 0em;
-  // background: 'rgba(237, 202, 165, 0.82)';
-  // border: 4px solid rgb(125, 83, 27);
   opacity: 1;
   flex-grow: 1;
   overflow-y: scroll;
@@ -80,13 +76,8 @@ html, body {
     &__list__item {
       padding: 5%;
       background: rgb(250, 245, 240);
-      // border: 4px solid rgb(125, 83, 27);
       font-size: 14px;
       width: 80%;
-      // display: flex;
-      // justify-content: space-around;
-      // align-items: center;
-      // overflow: hidden;
       display: grid;
       grid-template-columns: 1fr 2fr;
       place-items: center;
@@ -145,9 +136,6 @@ html, body {
       justify-content: space-between;
       padding: 0;
       margin: 0;
-      // margin: 0px;
-      // display: grid;
-      // grid-template-columns: repeat(3, 1fr);
 
       &__item {
         padding: 5px 10px;
@@ -222,12 +210,9 @@ html, body {
 .links {
   width: 40%;
   display: grid;
-  // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: 5fr 1fr 5fr 1fr 5fr;
   align-self: center;
   place-items: center;
-  // border: 2px solid rgb(125, 83, 27);
-  // border-radius: 10px;
   a {
     text-decoration: none;
     color: rgb(125, 83, 27);
@@ -242,7 +227,4 @@ html, body {
     }
   }
 
-  // p {
-  //   font-size: 30px;
-  // }
 }
