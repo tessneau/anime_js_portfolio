@@ -29,7 +29,7 @@ section {
 
 .content-container {
   height: 100%;
-  margin: 2em 1em 5em 1em;
+  margin: 2em 0em 4em 0em;
   padding: 1em 0em;
   opacity: 1;
   flex-grow: 1;
@@ -48,35 +48,29 @@ section {
       display: flex;
       justify-content: space-around; }
     .content-container .projects__list {
-      display: grid;
-      grid-gap: 4em 1em;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      place-items: center; }
-    .content-container .projects__list > div {
-      background: #f4d6b8;
-      border: 4px solid #7d531b;
-      height: 340px;
-      width: 300px;
-      place-items: center;
       display: flex;
       flex-flow: column;
+      align-items: center;
+      justify-content: space-between; }
+    .content-container .projects__list__item {
+      background: #faf5f0;
+      width: 100%;
+      display: flex;
       justify-content: space-around;
       align-items: center;
       overflow: hidden;
-      opacity: 1;
+      opacity: 0.5;
       transition: opacity 0.3s linear; }
-      .content-container .projects__list > div a {
+      .content-container .projects__list__item a {
         padding: 5px;
         text-decoration: none;
         color: #b02c2c; }
-      .content-container .projects__list > div span {
+      .content-container .projects__list__item span {
         font-size: 16px; }
-    .content-container .projects__list > div:hover {
-      background: #b02c2c;
-      opacity: 0.5; }
+    .content-container .projects__list__item:hover {
+      opacity: 1; }
   .content-container .project_info {
-    display: none;
-    position: absolute;
+    display: block;
     font-size: 30px;
     text-align: center; }
   .content-container .project_demo {
@@ -130,7 +124,8 @@ section {
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
   place-items: center;
-  border: 2px solid #7d531b; }
+  border: 2px solid #7d531b;
+  border-radius: 10px; }
   .links a {
     text-decoration: none;
     color: #7d531b;

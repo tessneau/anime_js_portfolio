@@ -36,14 +36,15 @@ function navHandler(e) {
   }
 }
 
-function projectHandler(e) {
-  if (e.target.className === "project_demo") {
-    e.target.nextElementSibling.style.display = "block";
-  }
-}
+// function projectHandler(e) {
+//   if (e.target.className === "project_demo") {
+//     console.log(e.target.nextElementSibling)
+//     e.target.nextElementSibling.style.display = "block";
+//   }
+// }
 
 links.addEventListener('click', navHandler)
-projects.addEventListener('mouseover', projectHandler)
+// projects.addEventListener('mouseover', projectHandler)
 
 /////// ANIMATIONS ////////////////////
 
