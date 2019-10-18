@@ -36,15 +36,18 @@ function navHandler(e) {
   }
 }
 
-// function projectHandler(e) {
-//   if (e.target.className === "project_demo") {
-//     console.log(e.target.nextElementSibling)
-//     e.target.nextElementSibling.style.display = "block";
-//   }
-// }
+function projectHandler(e) {
+  // if (e.target.className.includes("project_demo--daimon")) {
+  //   e.target.style.background = "url(./assets/pics/daimon.gif) center center / cover";
+  // } else if (e.target.className.includes("project_demo--lb")) {
+  //   e.target.style.background = "url(./assets/pics/la_bodega.gif) center center / cover";
+  // } else if (e.target.className.includes("project_demo--gf")) {
+  //   e.target.style.background = "url(./assets/pics/genrefluid.gif) center center / cover";
+  // }
+}
 
 links.addEventListener('click', navHandler)
-// projects.addEventListener('mouseover', projectHandler)
+projects.addEventListener('mouseover', projectHandler)
 
 /////// ANIMATIONS ////////////////////
 

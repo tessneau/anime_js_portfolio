@@ -61,11 +61,6 @@ html, body {
     }
 
     &__list {
-      // display: grid;
-      // grid-row-gap: 1em;
-      // grid-gap: 4em 1em;
-      // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      // place-items: center;
       margin: 5% 0%;
       display: flex;
       flex-flow: column;
@@ -94,6 +89,11 @@ html, body {
         padding: 5px;
         text-decoration: none;
         color: rgb(176, 44, 44);
+        transition: color 0.3s linear;
+        &:hover {
+          color: rgb(251, 102, 102);
+          cursor: pointer;
+        }
       }
       span {
         font-size: 16px;
@@ -147,16 +147,79 @@ html, body {
   }
 
   .project_demo {
-    width: 300px;
-    height: 370px;
-    // max-width: 80%;
-    // max-height: 400px;
-    object-fit: scale-down;
+    width: 400px;
+    height: 400px;
     border-radius: 5px;
 
-    &--shakespeare, &--map {
-      width: 400px;
-      height: 400px;
+    &.project_demo--lb {
+      background: url(../assets/pics/la_bodega_cart.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: background 0.3s ease;
+      &:hover {
+        background: url(../assets/pics/la_bodega.gif);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.project_demo--daimon {
+      background: url(../assets/pics/daimon_landing.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: background 0.3s ease;
+      &:hover {
+        background: url(../assets/pics/daimon.gif);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.project_demo--gf {
+      background: url(../assets/pics/genrefluid.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: background 0.3s ease;
+      &:hover {
+        background: url(../assets/pics/genrefluid.gif);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.project_demo--steno {
+      background: url(../assets/pics/stenographer_main.png);
+      background-position: 3%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: screen;
+    }
+
+    &.project_demo--map {
+      background: url(../assets/pics/leeMap2.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &.project_demo--winter {
+      background: url(../assets/pics/WS.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &.project_demo--shakespeare {
+      background: url(../assets/pics/shakespeare.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
