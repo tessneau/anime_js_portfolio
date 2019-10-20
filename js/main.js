@@ -14,18 +14,17 @@ function navHandler(e) {
   if (e.target.className === "links--about") {
     anime({
       targets: about,
-      opacity: 1,
+      opacity: [0,1],
       easing: 'easeOutExpo',
       duration: 3000,
       begin: function() {
         about.style.display = "block";
-        projects.style.display = "none";
-      }
+        projects.style.display = "none";      }
       });
   } else if (e.target.className === "links--projects") {
     anime({
       targets: projects,
-      opacity: 1,
+      opacity: [0,1],
       easing: 'easeOutExpo',
       duration: 3000,
       begin: function() {
