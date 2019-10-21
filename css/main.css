@@ -47,8 +47,21 @@ section {
       text-align: center; }
     .content-container .about > * {
       margin: 2em 0; }
+    .content-container .about__bio {
+      display: flex;
+      flex-flow: wrap;
+      align-items: flex-start; }
+      .content-container .about__bio__text {
+        width: 30em; }
+      .content-container .about__bio__logo {
+        width: 400px;
+        height: 150px;
+        background: url(../assets/pics/logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
     .content-container .about__tech_stack {
-      margin-top: 8em; }
+      margin-top: 4em; }
       .content-container .about__tech_stack__list {
         list-style-type: none;
         display: flex;
@@ -79,9 +92,10 @@ section {
       margin: 0 0.7em;
       background: rgba(250, 245, 240, 0.8);
       width: 80%;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      place-items: center;
+      display: flex;
+      align-items: flex-end;
+      flex-flow: wrap;
+      justify-content: space-between;
       opacity: 1;
       transition: opacity 0.3s linear; }
       .content-container .projects__list__item ul {
@@ -90,7 +104,8 @@ section {
         justify-content: flex-start;
         list-style-type: none; }
       .content-container .projects__list__item .project_icons {
-        font-size: 1.4em; }
+        font-size: 1.4em;
+        margin: 0.5em; }
       .content-container .projects__list__item a {
         padding: 5px;
         text-decoration: none;
@@ -109,14 +124,14 @@ section {
       border-radius: 0px 0px 15px 15px; }
   .content-container .project_info {
     height: 100%;
-    width: 70%;
+    width: 20em;
     font-size: 1.3em;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-between; }
     .content-container .project_info h3 {
-      margin: 0; }
+      margin: 2em; }
     .content-container .project_info .project_description {
       text-align: left; }
     .content-container .project_info .project_tech {

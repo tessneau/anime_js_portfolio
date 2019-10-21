@@ -64,8 +64,29 @@ html, body {
       margin: 2em 0;
     }
 
+    &__bio {
+      display: flex;
+      flex-flow: wrap;
+      align-items: flex-start;
+
+      &__text {
+        width: 30em;
+
+      }
+
+      &__logo {
+        width: 400px;
+        height: 150px;
+        background: url(../assets/pics/logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+      }
+    }
+
     &__tech_stack {
-      margin-top: 8em;
+      margin-top: 4em;
 
       &__list {
         list-style-type: none;
@@ -107,9 +128,10 @@ html, body {
       margin: 0 0.7em;
       background: rgba(250, 245, 240, 0.8);
       width: 80%;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      place-items: center;
+      display: flex;
+      align-items: flex-end;
+      flex-flow: wrap;
+      justify-content: space-between;
       opacity: 1;
       transition: opacity 0.3s linear;
 
@@ -122,6 +144,7 @@ html, body {
 
       .project_icons {
         font-size: 1.4em;
+        margin: 0.5em;
       }
 
       a {
@@ -156,7 +179,7 @@ html, body {
 
   .project_info {
     height: 100%;
-    width: 70%;
+    width: 20em;
     font-size: 1.3em;
     display: flex;
     flex-flow: column;
@@ -164,7 +187,7 @@ html, body {
     justify-content: space-between;
 
     h3 {
-      margin: 0;
+      margin: 2em;
     }
 
     .project_description {
